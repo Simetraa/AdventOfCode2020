@@ -41,10 +41,8 @@ for passport in passports:
         continue
 
     if not passport["pid"].isdigit():
-        print("Invalid pid", passport)
         continue
     if not len(passport["pid"]) == 9:
-        print("Invalid pid", passport)
         continue
 
     if not passport["hgt"].endswith(("cm", "in")):

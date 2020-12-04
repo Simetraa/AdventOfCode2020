@@ -31,7 +31,7 @@ for passport in passports:
         continue
     if not 2010 <= int(passport["iyr"]) <= 2020:
         continue
-    if not 2020 <= int(passport["eyr"]) <= 2030:  # cast these as well.
+    if not 2020 <= int(passport["eyr"]) <= 2030:
         continue
 
     if not re.search(hex_validator, passport["hcl"]):

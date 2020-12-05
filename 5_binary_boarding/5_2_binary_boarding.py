@@ -6,10 +6,6 @@ del passes[-1]  # remove new line
 
 scanned_seat_ids = []
 
-rows = 8
-cols = 128
-
-
 for pass_code in passes:
     row = pass_code[:7]
     col = pass_code[-3:]
